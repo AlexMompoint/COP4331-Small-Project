@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Vintage Contacts New User Creation</title>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/newUser.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://external-preview.redd.it/VV5SqgP4N_Orie0N-QVGq7zYAw4qD8OMBAJnHSGJ38Y.jpg?auto=webp&s=5fcdb6482cda6eb3836f098506cfd125ce7459a6");
+        }
+    </style>
+
+</head>
+
+<body style="background-color:darkblue">
+
+<h1 id="title" style="color:black;font-size:69;font-family:Comic;">Create Your Account:</h1>
+
+<div id="newUseDiv">
+  <span id="inner-title">PLEASE CREATE A LOGIN</span>
+
+  <div class="row">
+    <div class="column">
+      <text style="display:block;margin:0 auto;text-align:center;">First Name:</text>
+    </div>
+
+    <div class="column">
+      <text style="display:block;margin:0 auto;text-align:center;">Last Name:</text>
+    </div>
+  </div>
+
+  <div class="row">
+      
+    <div class="column">
+      <input style="display:block;margin:0 auto;" type="text" id="newFirst" placeholder="First Name" /><br />
+    </div>
+
+    <div class="column">
+      <input style="display:block;margin:0 auto;" type="text" id="newLast" placeholder="Last Name" /><br />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p style="display:block;margin:0 auto;text-align:center;">Username:</p>
+    </div>
+
+    <div class="column">
+      <p style="display:block;margin:0 auto;text-align:center;">Password:</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <input style="display:block;margin:0 auto;" type="text" id="newName" placeholder="Username" /><br />
+    </div>
+
+    <div class="column">
+      <input style="display:block;margin:0 auto;" type="password" id="newPass" placeholder="Password" /><br />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+        <button style="display:block;margin:0 auto;" type="button" id="createButton" class="buttons" onclick="createUser();"> Create Account </button>
+    </div>
+    
+    <div class="column">
+        <button style="display:block;margin:0 auto;" type="button" id="goBack" class="buttons" onClick="window.location.href = 'index.html'"> Go Back </button>
+    </div>
+  </div>
+
+  <span id="createResult"></span>
+</div>
+
+</body>
+</html>

@@ -21,11 +21,11 @@
 			$firstName = $row["firstName"];
 			$lastName = $row["lastName"];
 			$id = $row["UserID"];
-			returnWithInfo($firstName, $lastName, $id );
+			returnWithInfo($firstName, $lastName, $id);
 		}
 		else
 		{
-			returnWithError("No such contact");
+			returnWithError("Incorrect username/password.");
 		}
 		$conn->close();
 	}

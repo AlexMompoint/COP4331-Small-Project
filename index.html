@@ -1,22 +1,39 @@
 <html>
-<head>
-	<title>COP 4331 LAMP Stack Demo</title>
-	<script type="text/javascript" src="js/md5.js"></script>
-	<script type="text/javascript" src="js/code.js"></script>
-    <link href="css/styles.css" rel="stylesheet">	
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-</head>
-<body>
+    <head>
+    	<title>Vintage Contacts</title>
+    	<script type="text/javascript" src="js/md5.js"></script>
+    	<script type="text/javascript" src="js/code.js"></script>
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      
+      <style>
+             body {
+                background-image: url("https://external-preview.redd.it/VV5SqgP4N_Orie0N-QVGq7zYAw4qD8OMBAJnHSGJ38Y.jpg?auto=webp&s=5fcdb6482cda6eb3836f098506cfd125ce7459a6");
+             }
+      </style>
+    
+    </head>
+    
+    <h1 id="title" style="color:black;font-size:69;font-family:'Times New Roman';">Vintage Contacts</h1>
+    
+    <div class="container">
+    	<div id="loginDiv">
+    		<span id="inner-title" style="color:black;">PLEASE LOG IN</span>
+    		<input style="display:block;margin:0 auto;" type="text" id="loginName" placeholder="Username" /><br />
+    		<input style="display:block;margin:0 auto;" type="password" id="loginPassword" placeholder="Password"/><br />
+    
+    		<div class="row">
+    			<div class="column">
+    				<button type="button" id="loginButton" class="buttons" style="display:block;margin:0 auto;" onclick="doLogin();"> Log In </button>
+    			</div>
+    
+    			<div class="column">
+    				<button type="button" id="newUserButton" class="buttons" style="display:block;margin:0 auto;" onclick="window.location.href = 'newUser.html';"> Create Account </button>
+    			</div>
+    		</div>
+    
+    		<span id="loginResult"></span>
+    	</div>
+    </div>
 
-<h1 id="title">COP 4331 LAMP Stack Demo</h1>
-
-<div id="loginDiv">
-	<span id="inner-title">PLEASE LOG IN</span>
-	<input type="text" id="loginName" placeholder="Username" /><br />
-	<input type="password" id="loginPassword" placeholder="Password"/><br />
-	<button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Do It </button>
-	<span id="loginResult"></span>
-</div>
-
-</body>
 </html>
